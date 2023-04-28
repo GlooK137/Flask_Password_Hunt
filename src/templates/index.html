@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ping Anything</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Ping Anything</h1>
+    <form action="{{ url_for('ping') }}" method="post">
+        <input type="text" name="address" placeholder="Enter an address to ping">
+        <button type="submit">Ping</button>
+    </form>
+</body>
+</html>
+
